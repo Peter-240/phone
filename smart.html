@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>smartMobile</title>
+<style>
+
+body{
+  position:fixed;
+}
+
+ 
+  .main-box{
+
+
+    width: 185px;
+    height: 180px;
+    
+    position: fixed;
+    border-radius: 5px;
+  }
+
+
+  .form-app{
+    border-radius: 10px solid red;
+
+    margin-left:0px;
+  }
+
+  .button-screen{
+
+    margin-left: 0px;
+    margin-top: 150px;
+    position:relative ;
+    
+
+
+
+  }
+  .butt-deco{
+
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    position: relative;
+    background-color:red;
+
+
+    
+
+  }
+  .main-box{
+
+    background-color: white;
+
+  }
+  .key-pod{
+
+    align-content: center;
+    margin-left: 0px;
+    position: fixed;
+    
+
+    margin-left: -20px;
+
+    
+    
+  }
+  .key-pod,.butto-margin{
+
+    margin: auto;
+  }
+
+  
+img{
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 14px;
+ margin: auto;
+ margin-top: -5px;
+ position: relative;
+}
+
+
+
+
+.system-call{
+
+  margin-top:5px;
+  margin-left: 58px;
+
+  position: absolute;
+  
+}
+.phone-book{
+  
+  position: absolute;
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+
+  margin-left:0px;
+}
+.call{
+  position:absolute;
+  margin-top: 20px;
+  display: flex;
+
+  width: 30px;
+  height: 15px;
+  margin-left: -50px;
+  font-weight: bolder;
+  align-items: center;
+}
+.delete{
+  margin-right: -40px;
+  width: 30px;
+  height: 15px;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-weight: bolder;
+  align-items: center;
+  padding-top: -8px;
+  padding-bottom: 0px;
+  color: black;
+
+}
+.butto-margin-left{
+ 
+  position:absolute;
+  margin-top: 10px;
+  display: flex;
+
+  width: 30px;
+  height: 15px;
+  margin-left: -50px;
+  padding-top: 10px;
+  align-items:center;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+
+.butto-margin-right{
+
+  margin-right: -5px;
+  width: 30px;
+  height: 15px;
+  margin-left: 100px;
+  margin-top: 10px;
+  display: flex;
+  position: absolute;
+color: green;
+padding-bottom: 0px;
+align-items: center;
+font-weight: bolder;
+
+}
+.center-button{
+
+  width: 60px;
+  height: 30px;
+  margin-left: -5px;
+  margin-top: -20px;
+  position: fixed;
+  background-color:red;
+  border-radius: 5px;
+}
+
+/*-------for icon decolations-------*/
+
+.left-icon{
+  position:absolute;
+  margin-top: 10px;
+  display: flex;
+  font-size: 7px;
+align-items: center;
+  width: 10px;
+  height: 20px;
+  margin-left: -10px;
+  background-color:gray;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.right-icon{
+  margin-right: 0px;
+  width: 10px;
+  height: 20px;
+  margin-left: 59px;
+  margin-top: 10px;
+  display: flex;
+  position: absolute;
+  font-size: 7px;
+  align-items: center;
+  background-color:gray;
+  border: none;
+  padding-right: -2px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.top-icon{
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  width: 20px;
+  height: 10px;
+  margin-top: -5px;
+  position: fixed;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  align-items: center;
+  font-size: 7px;
+  background-color:gray;
+  border: none;
+}
+ .bottom-icon{
+  margin-left: 20px;
+  width: 20px;
+  height: 10px;
+  margin-top: 30px;
+  font-size: 7px;
+  align-items: center;
+  position: fixed;
+  background-color:gray;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+ }
+ .center-icon{
+
+  width: 30px;
+  height: 20px;
+  border-radius: 17px;
+  margin-left:15px ;
+  position: absolute;
+  margin-top: 7.5px;
+  margin-right: 0px;
+  background-color:gray;
+  border: none;
+  color:yellow;
+  font-size: 15px;
+  align-items: center;
+  font-weight: bold;
+
+ }
+
+
+ /*-------------Key border functions---------------*/
+
+
+
+ .whole-button{
+
+
+  margin-top: 90px;
+  width: 165px;
+  margin-left: 1px;
+  height: 24vh;
+  border: none;
+  position: fixed;
+  
+ }
+
+ .whole-button-left{
+
+  width: 44px;
+  height: 20px;
+  margin-left: -8px;
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+
+ }
+
+ .whole-button-center{
+
+width: 45px;
+height: 20px;
+margin-left: 15px;
+
+color: white;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.whole-button-rigth{
+
+width: 55px;
+height: 20px;
+margin-left: 16px;
+margin-right: -10px;
+
+color: white;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.whole-button-spacing{
+
+  margin-top: 8px;
+}
+/*----------for hover--------*/
+
+.home{
+width: 196px;
+height: 390px;
+position: fixed;
+
+background-color:black;
+border-radius: 10px;
+align-items: center;
+margin-left: 500px;
+margin-top: 50px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+  
+<fieldset class="home">
+  <input type="text" class="main-box" ><img src="comera.jpg" alt=""></p>
+
+
+    
+  <form action="" class="form-app">
+    
+
+
+    <div class="button-screen" >
+      
+      
+      
+      
+      
+      
+      <div class="key-pod">
+    
+        <div class="system-call">
+  
+          <div>
+            
+            <button class="call">•••</button>
+          
+          <button class="delete">•••</button>
+        </div>
+              <button class="butto-margin-left">⁀</button>
+  
+  
+                 <span><fieldset class="center-button">
+                  <button class="right-icon">▶</button>
+                  <button class="center-icon">▭</button>
+                  <button class="bottom-icon">▼</button>
+                  <button class="left-icon">◀</button>
+                  <button class="top-icon">▲</button>
+                
+                
+                </fieldset></span>
+                 <button class="butto-margin-right">ↂ</button>
+        
+        </div>
+  
+  
+  
+        <div>
+  
+  
+          <fieldset class="whole-button">
+            <button class="whole-button-left">1!</button>
+            <button class="whole-button-center">2ABC</button>
+            <button class="whole-button-rigth">3DEF</button>
+           
+  
+           <div class="whole-button-spacing">
+            <button class="whole-button-left">4GHI</button>
+            <button class="whole-button-center">5JKL</button>
+            <button class="whole-button-rigth">6MNO</button>
+           </div>
+  
+           <div class="whole-button-spacing">
+            <button class="whole-button-left">7PQR</button>
+            <button class="whole-button-center">8TUV</button>
+            <button class="whole-button-rigth">9WXYZ</button>
+  
+           </div>
+           <div class="whole-button-spacing">
+            <button class="whole-button-left">*</button>
+            <button class="whole-button-center">0 +</button>
+            <button class="whole-button-rigth">#</button>
+           </div>
+           <div class="whole-button-spacing">
+            <button class="whole-button-left">ALt</button>
+            <button class="whole-button-center">SHIT</button>
+            <button class="whole-button-rigth">↲</button>
+           </div>
+  
+            
+  
+  
+  
+          </fieldset>
+        </div>
+      </div></fieldset>
+      
+  
+    
+    </fieldset>
+</fieldset>
+  
+  
+ </body>
+
+</html>
